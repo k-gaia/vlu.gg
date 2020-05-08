@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <style>
+
+        body {
+
+            background-image: url('landCover.png');
+
+        }
+
+        ul {
+        position: absolute;
+        top: 400px;
+        text-align: center;
+        }
+
+        li {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 50px;
+        position: relative;
+        left: -2px;
+        }
+
+        li img {
+        max-width: 100%;
+        height: auto;
+        }
+
+        .mapText {
+            
+            position: absolute; 
+            top: 105px; 
+            left: -10px; 
+            width: 100%; 
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 32px;
+            opacity: 0;
+        }
+
+
+        #mapThumbImg{
+
+            border: 3px solid rgb(255, 201, 190);
+            -webkit-filter: blur(1.5px); /* Safari 6.0 - 9.0 */
+            filter: blur(1.5px);
+            border-radius: 2%;
+
+        }
+
+        #maps li:hover #mapThumbImg{
+
+            opacity: 1;
+            -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+            filter: blur(0px);
+
+        }
+
+        #maps li:hover .mapText{
+
+        opacity: 1;
+
+        }
+   
+    </style>
+
+</head>
+<body>
+
+<img src='logo1use.png' style="position: absolute; top: 80px; text-align: center; left: 50%; width: 480px; margin-left: -240px;" draggable="false" ondragstart="return false;">
+
+<div>
+
+<ul id='maps'>
+    
+    <li>
+        <a href='bind.html'><img id='mapThumbImg' src='maps/thumbs/Bind_Map.png' width='' title='Bind' draggable="false" ondragstart="return false;"></a>
+        <a href='bind.html'><span class='mapText'> <h2> Bind </h2> </span></a>
+    </li>
+
+    <li>
+        <a href='haven.html'><img id='mapThumbImg' src='maps/thumbs/Haven_Map.png' width='' title='Haven' draggable="false" ondragstart="return false;"></a>
+        <a href='haven.html'><span class='mapText'> <h2> Haven </h2> </span></a>
+    </li>
+
+    <li>
+        <a href='split.html'><img id='mapThumbImg' src='maps/thumbs/Split_Map.png' width='' title='Split' draggable="false" ondragstart="return false;"></a>
+        <a href='split.html'><span class='mapText'> <h2> Split </h2> </span></a>
+    </li>
+
+</ul>
+
+</body>
+
+</html>

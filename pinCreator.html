@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="scripts.js"></script> 
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+
+<label for="show-menu" class="show-menu">Show Menu</label>
+    <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+        <li>
+            <a href="#">Agents</a>
+            <ul class="hidden">
+                <li><a href="#" onclick="changeChamp('Breach')">Breach</a></li>
+                <li><a href="#" onclick="changeChamp('Brimstone')">Brimstone</a></li>
+                <li><a href="#" onclick="changeChamp('Cypher')">Cypher</a></li>
+                <li><a href="#" onclick="changeChamp('Jett')">Jett</a></li>
+                <li><a href="#" onclick="changeChamp('Omen')">Omen</a></li>
+                <li><a href="#" onclick="changeChamp('Phoenix')">Phoenix</a></li>
+                <li><a href="#" onclick="changeChamp('Raze')">Raze</a></li>
+                <li><a href="#" onclick="changeChamp('Sage')">Sage</a></li>
+                <li><a href="#" onclick="changeChamp('Sova')">Sova</a></li>
+                <li><a href="#" onclick="changeChamp('Viper')">Viper</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Maps</a>
+            <ul class="hidden">
+                <li><a href="#" onclick="changeMap('Bind')">Bind</a></li>
+                <li><a href="#" onclick="changeMap('Haven')">Haven</a></li>
+                <li><a href="#" onclick="changeMap('Split')">Split</a></li>
+            </ul>
+        </li>
+    </ul>
+
+        <img id='agentImg' src="champIcons/Breach_icon.webp" width="100px" style="position: absolute; bottom: 15px; left: 15px; border: solid 5px black; background-color: rgba(0, 0, 0, 0.5) ">
+
+        <div id='mapDiv'>
+            <img id='mapImg' src="maps/Bind_mini-map.webp" width="920px">
+        </div>
+
+        <div id="light">
+
+            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+
+            <!-- > <iframe id='smokeVideo' width='600' height='400' src="https://www.youtube.com/embed/SbQc_JLUH7k?rel=0" frameborder="0" allowfullscreen></iframe> <! --> 
+            <video id="smokeVideo" width='900' controls>
+
+                <source src="a" type="video/mp4">
+
+            </video>
+
+        </div>
+
+        <div id="fade" onClick="lightbox_close();"></div>
+
+        <button onclick="createPin()" style="position: absolute; bottom: 0;"> Capture Pin </button>
+        <button onclick="enableDraw()" style="position: absolute; bottom: 0px; left: 55vw;"> Draw Pins </button>
+        <button onclick="clearPins(), clearChildPins()" style="position: absolute; bottom: 0px; left: 45vw;"> Clear Pins </button>
+        <select id="champs" onchange="updateAbilities()" style="position: absolute; bottom: 0px; left: 30vw;"></select>
+        <select id="abilities" style="position: absolute; bottom: 0px; left: 35vw;"></select>
+        <select id='pinType' style="position: absolute; bottom: 0px; left: 25vw;">
+        
+            <option>Main Pin</option>
+            <option>Child Pin</option>
+        
+        </select>
+
+    </body>
+
+
+</html>

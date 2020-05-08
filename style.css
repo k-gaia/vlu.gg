@@ -1,0 +1,325 @@
+body {
+
+background-color: #191919;
+text-align: center;
+}
+
+#champSelect {
+display: inline-block;
+}
+
+#champSelect button {
+
+padding: 8px 8px;
+margin-left: 15px;
+background-size: cover;
+}
+
+#mapImg {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -460px; /* Half the height */
+  margin-left: -460px; /* Half the width */
+}
+
+.radio-toolbar {
+    margin: 10px;
+  }
+  
+  .radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+  
+  .radio-toolbar label {
+      display: inline-block;
+      background-color: #ddd;
+      padding: 10px 20px;
+      font-family: sans-serif, Arial;
+      font-size: 16px;
+      border: 2px solid #444;
+      border-radius: 4px;
+  }
+  
+  .radio-toolbar label:hover {
+    background-color: #dfd;
+  }
+  
+  .radio-toolbar input[type="radio"]:focus + label {
+      border: 2px dashed #444;
+  }
+  
+  .radio-toolbar input[type="radio"]:checked + label {
+      background-color: #bfb;
+      border-color: #4c4;
+  }
+
+.pinButton {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  color: white;
+  position: fixed;
+  align-self: center;
+}
+
+#pinLabel{
+  
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 250%;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+
+  bottom: 0px;
+  right: 380px;
+
+
+}
+
+.pinButton:hover #pinLabel{
+
+  opacity: 1;
+  
+}
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+
+#light {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  max-width: 1280px;
+  max-height: 750px;
+  margin-left: -440px;
+  margin-top: -380px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclose {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+#fade:hover ~ #boxclose {
+  display:none;
+}
+
+.test:hover ~ .test2 {
+  display: none;
+}
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 10px;
+    right: auto;
+}
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:160px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+    background: #FFAC9B;
+    text-decoration: none;
+    right: auto;
+}
+
+li button {
+  display:block;
+  min-width:160px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background: #FFAC9B;
+  text-decoration: none;
+  right: auto;
+  background-image: none;
+  border: none;
+
+}
+
+/*Hover state for top level links*/
+li:hover a {
+    background: rgb(255, 190, 177);
+    right: auto;
+}
+
+/*Hover state for top level links*/
+li:hover button {
+  background: rgb(255, 190, 177);
+  right: auto;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 50px;
+    line-height: 50px;
+    bottom: 0;
+    right: auto;
+}
+
+li:hover ul button {
+  background: #f3f3f3;
+  min-width:160px;
+  color: #2f3036;
+  height: 50px;
+  line-height: 50px;
+  bottom: 0;
+  right: auto;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: rgb(255, 190, 177);
+    color: #fff;
+    right: auto;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul button:hover {
+  background: rgb(255, 190, 177);
+  color: #fff;
+  right: auto;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+    right: auto;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+    right: auto;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 120px;
+    padding: 0 20px;
+    right: auto;
+}
+
+/*Prevent text wrapping*/
+li ul li button {
+  width: auto;
+  min-width: 120px;
+  padding: 0 20px;
+  right: auto;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+    bottom:50px;
+    right: auto;
+}
+
+/*Display the dropdown on hover*/
+ul li button:hover + .hidden, .hidden:hover {
+  display: block;
+  bottom:50px;
+  right: auto;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+

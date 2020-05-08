@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="scripts.js"></script> 
+        <script src="pins.js"></script> 
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+
+    <a href='landingPage.html'><img src='logo2use.png' width='10%' style="position:absolute; top: 0px; left: 0px;"></a>
+
+    <label for="show-menu" class="show-menu">Show Menu</label>
+
+        <input type="checkbox" id="show-menu" role="button">
+        
+            <ul id="menu">
+
+            <li>
+                <button href="#">Abilities</button>
+                <ul class="hidden">
+                    <li id='ability1'><button href="#" onclick="changeAbility('Aftershock')">Aftershock</button></li>
+                    <li id='ability2'><button href="#" onclick="changeAbility('Flashpoint')">Flashpoint</button></li>
+                    <li id='ability3'><button href="#" onclick="changeAbility('Fault_Line')">Fault Line</button></li>
+                    <li id='ability4'><button href="#" onclick="changeAbility('Rolling_Thunder')">Rolling Thunder</button></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Agents</a>
+                <ul class="hidden">
+                    <li><button href="#" onclick="changeChamp('Breach')">Breach</button></li>
+                    <li><button href="#" onclick="changeChamp('Brimstone')">Brimstone</button></li>
+                    <li><button href="#" onclick="changeChamp('Cypher')">Cypher</button></li>
+                    <li><button href="#" onclick="changeChamp('Jett')">Jett</button></li>
+                    <li><button href="#" onclick="changeChamp('Omen')">Omen</button></li>
+                    <li><button href="#" onclick="changeChamp('Phoenix')">Phoenix</button></li>
+                    <li><button href="#" onclick="changeChamp('Raze')">Raze</button></li>
+                    <li><button href="#" onclick="changeChamp('Sage')">Sage</button></li>
+                    <li><button href="#" onclick="changeChamp('Sova')">Sova</button></li>
+                    <li><button href="#" onclick="changeChamp('Viper')">Viper</button></li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <div id='agentInfoDiv'>
+            <img id='agentImg' src="champIcons/Breach_icon.webp" width="100px" style="position: absolute; bottom: 10px; left: 15px; border: solid 5px black; border-radius: 50%; background-color: rgba(0, 0, 0, 0.5) " draggable="false">
+            <p id='agentText' style="position: absolute; bottom: -30px; left: 130px; font-family: 'Josefin Sans', sans-serif; font-size: 32px; color: white;">Breach</p>
+        </div>
+
+        <div id='mapDiv'>
+            <img id='mapImg' src="maps/Split_mini-map.webp" width="920px" draggable="false">
+        </div>
+
+        <div id="light">
+
+            <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+
+            <iframe id='smokeVideo' width='1280' height='720' src="" frameborder="0" allowfullscreen="true" allowautoplay="true" allow="autoplay" autoplay></iframe>
+            <!-- 
+            <video id="smokeVideo" width='1280' controls>
+
+                <source src="a" type="video/mp4">
+
+            </video>
+            -->
+
+            <pre id="smokeVideoNote"style="position: absolute; color: white;"> Test Me </pre>
+
+        </div>
+
+        <div id="fade" onClick="lightbox_close();"></div>
+
+    </body>
+
+
+</html>
