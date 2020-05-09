@@ -43,8 +43,8 @@ var pins =
         ['Bind','Omen','Dark_Cover',672,298, [[668,380,'https://www.youtube.com/embed/ZsAR_XCFh8s?start=516&=end=526', 'B-Long Lineup']], 'B-Elbow Smoke'],
         ['Bind','Omen','Shrouded_Step',640,295, [[707,362,'https://www.youtube.com/embed/ZsAR_XCFh8s?start=521&end=534', 'B-Entrance Lineup']], 'Sneaky Teleport B-Elbow '],
         ['Bind','Omen','Paranoia',774,429, [[833,436,'https://www.youtube.com/embed/ZsAR_XCFh8s?start=353&end=357', 'Mid Lineup']], 'Back Hookah Blind'],
-        ['Split','Sage','Slow_Orb',1068,573, [[893,458,'vids/Split/Sage/gaia Mid B-Connector Slow.mp4', 'Back Mid Lobby Lineup']], 'Mid B-Connector Slow'],
-        ['Split','Sage','Slow_Orb',944,134, [[921,530,'vids/Split/Sage/gaia Mid A Entrance Slow.mp4', 'Mid Lineup']], 'A Entrance Slow '],
+        ['Split','Sage','Slow_Orb',1068,573, [[893,458,'vids/Split/Sage/Gaia Mid B-Connector Slow.mp4', 'Back Mid Lobby Lineup']], 'Mid B-Connector Slow'],
+        ['Split','Sage','Slow_Orb',944,134, [[921,530,'vids/Split/Sage/Gaia Mid A Entrance Slow.mp4', 'Mid Lineup']], 'A Entrance Slow '],
         ['Split','Viper','Toxic_Screen',936,266, [[1174,302,'https://v.redd.it/1k05fapw20s41/DASH_1080?source=fallback.mp4', 'Attacker A-Site Lobby']], 'A-Ramp & A-Heaven Wall'],
         ['Split','Viper','Toxic_Screen',760,249, [[1175,304,'https://v.redd.it/1k05fapw20s41/DASH_1080?source=fallback.mp4', 'Attacker A-Site Lobby']], 'A-Ramp & A-Heaven Wall']
     ]
