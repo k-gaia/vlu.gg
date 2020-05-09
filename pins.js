@@ -4,7 +4,7 @@ var pins =
         ["Bind", "Sova", "Recon_Bolt",  695, 248, [[1135, 233, "vids/BindSovaReconA.mp4"]], "B-Site Recon Dart"],
         ['Haven','Viper','Poison_Cloud',779, 127, [[1071, 267,"vids/BindSovaReconA.mp4", 'Back Long Lineup'],[1067,222,"vids/BindSovaReconA.mp4", 'Middle Long Lineup']], 'Heaven Smoke'],
         ['Bind','Brimstone','Incendiary',1223,356, [[1246,476,"vids/Bind/Brimstone/Kikis Youtube Shower Corner Molly.webm", 'Outside Shower Lineup', 'Aim for the middle of leaf, above missing portion.']], 'Shower Boxes Molly'],
-        ['Bind','Brimstone','Incendiary',1193,222, [[975,513,'vids/Bind/Brimstone/TheNameIsToby Reddit Heaven Molly.webm', 'Attacker Mid-Lobby Lineup'],[1131,603,'vids/Bind/Brimstone/Kikis Youtube Heaven Molly.webm', 'Attacker A Lobby Lineup']], 'Heaven Molly'],
+        ['Bind','Brimstone','Incendiary',1193,222, [[975,513,'vids/Bind/Brimstone/Thenameistoby Reddit Heaven Molly.webm', 'Attacker Mid-Lobby Lineup'],[1131,603,'vids/Bind/Brimstone/Kikis Youtube Heaven Molly.webm', 'Attacker A Lobby Lineup']], 'Heaven Molly'],
         ['Bind','Brimstone','Incendiary',1018,336, [[1105,573,'vids/Bind/Brimstone/Riival Reddit Brim A Molly.webm', 'Attacker A Lobby Lineup']], 'A Lamp Corner Molly'],
         ['Bind','Brimstone','Incendiary',1165,282, [[1291,534,'vids/Bind/Brimstone/spikare Reddit ASite Molly.webm', 'A Lobby Lineup']], 'A-Site Boxes Molly'],
         ['Bind','Brimstone','Incendiary',810,269, [[852,527,'vids/Bind/Brimstone/Kikis Youtube B Corner Molly.webm', 'Mid Lineup']], 'B Cubby Molly'],
