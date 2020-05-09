@@ -1,6 +1,8 @@
-# vlu.gg
-Valorant Lineups Website.
+# vlu.gg - Valorant Lineups Website.
 
-Hello, the purpose of 'Valorant Lineups' is to provide a quick solution to provide players with 
-those ability lineups that they're wondering if exist. The main goal being to be able to pull the site up
-while in-game and be able to quickly look for that new lineup to help out with your round. 
+The Purpose of 'Valorant Lineups' is to provide a quick solution to ability lineups.
+
+Sometimes you wonder if a better way to throw an ability exists.
+Well it's main feature is being able to pull the site up midgame for lineups.
+
+Currently in development, I'm adding new lineups as well features to the site itself. 
