@@ -18,7 +18,7 @@ var pins =
         ['Split','Sage','Slow_Orb',764,247, [[1084,124,'vids/Split/Sage/Purrplexx A Heaven Slow.mp4', 'Attacker A-Lobby Lineup']], 'A-Site Heaven Slow'],
         ['Split','Sage','Slow_Orb',653,193, [[1084,123,'vids/Split/Sage/Purrplexx A Back Slow.mp4', 'Attacker A-Lobby Lineup']], 'Back A-Site Slow'],
         ['Split','Sage','Slow_Orb',877,315, [[1222,294,'vids/Split/Sage/Purrplexx A Ramp Slow.mp4', 'Attacker A-Lobby Lineup']], 'A Heaven Ramp Slow'],
-        ['Bind','Phoenix','Hot_Hands',1221,358, [[1270,413,'vids/Bind/Phoenix/xRiival Reddit Shower Crate Molly.webm', 'Shower Lineup']], 'Shower Corner Crates Molly'],
+        ['Bind','Phoenix','Hot_Hands',1221,358, [[1270,413,'vids/Bind/Phoenix/Xriival Reddit Shower Crate Molly.webm', 'Shower Lineup']], 'Shower Corner Crates Molly'],
         ['Bind','Phoenix','Hot_Hands',1252,395, [[1227,341,'vids/Bind/Phoenix/xRiival Reddit Showers Molly.mp4', 'Shower Crates Lineup']], 'A Showers Molly'],
         ['Bind','Sage','Slow_Orb',781,402, [[1138,369,'https://v.redd.it/ise16545kmw41/DASH_1080?source=fallback', 'A Site Lineup']], 'Hookah Slow Orb'],
         ['Haven','Raze','Paint_Shells',1035,738, [[858,727,'https://v.redd.it/orlv26s1bur41/DASH_1080?source=fallback.mp4', 'C-Site Lineup']], 'C-Cubby Grenade'],
