@@ -348,7 +348,7 @@ function clearChildPins(champToClear){
 function lightbox_open(vidSrc) {
 
         const lightBoxVideo = document.getElementById('smokeVideo');
-        changeSource(vidSrc);
+        lightBoxVideo.setAttribute('src', vidSrc);
         window.scrollTo(0, 0);
         document.getElementById('light').style.display = 'block';
         document.getElementById('fade').style.display = 'block';
