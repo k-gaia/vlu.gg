@@ -11,7 +11,7 @@ var pins =
         ['Bind','Brimstone','Sky_Smoke',1191,313, [[1226,380,'vids/Bind/Brimstone/Spikare Reddit Asite Smokes.webm', 'Shower Lineup']], 'A-Site Smoke'],
         ['Bind','Brimstone','Sky_Smoke',1131,313, [[1226,380,'vids/Bind/Brimstone/Spikare Reddit Asite Smokes.webm', 'Shower Lineup']], 'A-Site Smoke'],
         ['Bind','Brimstone','Sky_Smoke',1191,203, [[1226,380,'vids/Bind/Brimstone/Spikare Reddit Asite Smokes.webm', 'Shower Lineup']], 'A-Site Smoke'],
-        ['Haven','Sova','Recon_Bolt',1166,726, [[820,830,'vids/Haven/Sova/Applethauce21 Reddit C Long Recondart.mp4', 'Elevator Lineup', "Aligh bottom left of 'Charge HUD' with Tree.]], 'C Long Recon Dart'],
+        ['Haven','Sova','Recon_Bolt',1166,726, [[820,830,'vids/Haven/Sova/Applethauce21 Reddit C Long Recondart.mp4', 'Elevator Lineup', "Aligh bottom left of 'Charge HUD' with Tree."]], 'C Long Recon Dart'],
         ['Split','Sage','Barrier_Orb',1064,124, [[1084,124,'vids/Split/Sage/BulletRisk Twitch Attacker Lobby Heaven Self-Boost.mp4', 'Self Boost']], 'Heaven Peek Self-Boost'],
         ['Split','Sage','Slow_Orb',838,665, [[1088,766,'vids/Split/Sage/Purrplexx B Heaven Slow.mp4', 'Attacker B-Lobby Lineup']], 'B-Site Heaven Slow'],
         ['Split','Sage','Slow_Orb',761,869, [[1136,692,'vids/Split/Sage/Purrplexx B Backsite Slow.mp4', 'Attacker B-Lobby Lineup']], 'Backsite B Slow'],
