@@ -7,6 +7,7 @@ var pinSize = 26;
 var activePinIDs = [];
 var activeChildPinIDs = [];
 var drawingPins = false;
+var calloutState = false;
 
 var champs = ['Breach', 'Brimstone', 'Cypher', 'Jett', 'Omen', 'Phoenix', 'Raze', 'Sage', 'Sova', 'Viper'];
 var abilities = [
@@ -67,7 +68,7 @@ function changeChamp(selectedChamp){
     ability4 = '"' + abilities[champs.findIndex(champGet)][3] + '"';
 
     // change champ 
-    document.getElementById('agentImg').src = "champIcons/" + champ + "_icon.webp";
+    document.getElementById('agentImg').src = "champIcons/" + champ + "_Icon.webp";
     document.getElementById('agentText').innerText = champ;
 
     // setup ability dropdown 
@@ -348,7 +349,7 @@ function clearChildPins(champToClear){
 function lightbox_open(vidSrc) {
 
         const lightBoxVideo = document.getElementById('smokeVideo');
-        lightBoxVideo.setAttribute('src', vidSrc);
+        changeSource(vidSrc);
         window.scrollTo(0, 0);
         document.getElementById('light').style.display = 'block';
         document.getElementById('fade').style.display = 'block';
@@ -543,5 +544,17 @@ function enableDraw(){
 
         drawingPins = false;
 
+    }
+}
+
+function calloutEnabler(){
+    calloutsImage = document.getElementById('mapImg2');
+    if (calloutState == true){
+        calloutState = false;
+        calloutsImage.className = 'fade-out';
+    }
+    else {
+        calloutState = true;
+        calloutsImage.className = 'fade-in';
     }
 }
