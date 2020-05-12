@@ -14,7 +14,7 @@
 
     <body>
 
-    <a href='index.html'><img src='logo2use.png' width='10%' style="position:absolute; top: 0px; left: 0px;"></a>
+    <a href='landingPage.html'><img src='logo2use.png' width='10%' style="position:absolute; top: 0px; left: 0px;"></a>
 
     <label for="show-menu" class="show-menu">Show Menu</label>
 
@@ -57,6 +57,7 @@
 
         <div id='mapDiv'>
             <img id='mapImg' src="maps/Bind_mini-map.webp" width="920px" draggable="false">
+            <img id='mapImg2' src="maps/Bind_mini-map_calls.webp" width="920px" draggable="false">
         </div>
 
         <div id="light">
@@ -77,6 +78,10 @@
         </div>
 
         <div id="fade" onClick="lightbox_close();"></div>
+
+        <div class="box">
+            <button class="btn btn-white btn-animation-1" onclick="calloutEnabler()">Callouts</button> 
+        </div>
 
     </body>
 
