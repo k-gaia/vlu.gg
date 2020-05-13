@@ -10,38 +10,22 @@
 
     </head>
 
+    <a href='landingPage.html'><img src='logo2use.png' width='10%' style="position:absolute; top: 0px; left: 0px;"></a>
+
     <body>
 
 <label for="show-menu" class="show-menu">Show Menu</label>
     <input type="checkbox" id="show-menu" role="button">
         <ul id="menu">
         <li>
-            <a href="#">Agents</a>
-            <ul class="hidden">
-                <li><a href="#" onclick="changeChamp('Breach')">Breach</a></li>
-                <li><a href="#" onclick="changeChamp('Brimstone')">Brimstone</a></li>
-                <li><a href="#" onclick="changeChamp('Cypher')">Cypher</a></li>
-                <li><a href="#" onclick="changeChamp('Jett')">Jett</a></li>
-                <li><a href="#" onclick="changeChamp('Omen')">Omen</a></li>
-                <li><a href="#" onclick="changeChamp('Phoenix')">Phoenix</a></li>
-                <li><a href="#" onclick="changeChamp('Raze')">Raze</a></li>
-                <li><a href="#" onclick="changeChamp('Sage')">Sage</a></li>
-                <li><a href="#" onclick="changeChamp('Sova')">Sova</a></li>
-                <li><a href="#" onclick="changeChamp('Viper')">Viper</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">Maps</a>
-            <ul class="hidden">
+            <ul class="hidden"></ul>
                 <li><a href="#" onclick="changeMap('Bind')">Bind</a></li>
                 <li><a href="#" onclick="changeMap('Haven')">Haven</a></li>
                 <li><a href="#" onclick="changeMap('Split')">Split</a></li>
             </ul>
         </li>
     </ul>
-
-        <img id='agentImg' src="champIcons/Breach_icon.webp" width="100px" style="position: absolute; bottom: 15px; left: 15px; border: solid 5px black; background-color: rgba(0, 0, 0, 0.5) ">
-
+        
         <div id='mapDiv'>
             <img id='mapImg' src="maps/Bind_mini-map.webp" width="920px">
         </div>
@@ -61,12 +45,12 @@
 
         <div id="fade" onClick="lightbox_close();"></div>
 
-        <button onclick="createPin()" style="position: absolute; bottom: 0;"> Capture Pin </button>
-        <button onclick="enableDraw()" style="position: absolute; bottom: 0px; left: 55vw;"> Draw Pins </button>
-        <button onclick="clearPins(), clearChildPins()" style="position: absolute; bottom: 0px; left: 45vw;"> Clear Pins </button>
-        <select id="champs" onchange="updateAbilities()" style="position: absolute; bottom: 0px; left: 30vw;"></select>
-        <select id="abilities" style="position: absolute; bottom: 0px; left: 35vw;"></select>
-        <select id='pinType' style="position: absolute; bottom: 0px; left: 25vw;">
+        <button onclick="createPin()" style="position: absolute; bottom: 0; left: 30vw;"> Capture Pin </button>
+        <button onclick="enableDraw()" style="position: absolute; bottom: 0px; left: 25vw;"> Draw Pins </button>
+        <button onclick="clearPins(), clearChildPins()" style="position: absolute; bottom: 0px; left: 35vw;"> Clear Pins </button>
+        <select id="champs" onchange="updateAbilities()" style="position: absolute; bottom: 0px; left: 7%;"></select>
+        <select id="abilities" style="position: absolute; bottom: 0px; left: 12%;"></select>
+        <select id='pinType' style="position: absolute; bottom: 0px; left: 2%;">
         
             <option>Main Pin</option>
             <option>Child Pin</option>
