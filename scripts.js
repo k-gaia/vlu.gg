@@ -400,12 +400,12 @@ function createPin(){
             const pinDirectory = prompt("Video Name: ");
 
             pinToSave[4].push("[" + document.getElementById(activePinIDs[i]).style.left.replace("px", ""), 
-            document.getElementById(activePinIDs[i]).style.top.replace("px", ""), "'"+pinDirectory+".mp4', '" + childPinName + "', '" + childPinNote + "']");
+            document.getElementById(activePinIDs[i]).style.top.replace("px", ""), "'"+pinDirectory+"', '" + childPinName + "', '" + childPinNote + "']");
         }
 
     }
 
-    console.log("['" + map + "','" + document.getElementById('champs').value 
+    alert("['" + map + "','" + document.getElementById('champs').value 
     + "','" + document.getElementById('abilities').value + "'," +    
     document.getElementById('newPin').style.getPropertyValue('left').replace("px", "") 
     + "," + document.getElementById('newPin').style.getPropertyValue('top').replace("px", "") 
