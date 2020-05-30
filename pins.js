@@ -50,5 +50,8 @@ var pins =
         ['Bind','Phoenix','Hot_Hands',1021,334, [[1047,495,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=181', 'A-Short Lineup', 'Run Throw']], 'U-Haul Entrance Molly'],
         ['Bind','Phoenix','Blaze',1074,365, [[1055,484,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=207', 'A-Site Entrance ', 'Useful for A-Short pushes ']], 'A-Short Wall Push'],
         ['Bind','Phoenix','Hot_Hands',1092,487, [[1058,367,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=269', 'A-Tele Lineup', 'Use At Start of Round ']], 'A-Short Defence Molly'],
+        ['Bind','Phoenix','Hot_Hands',1254,394, [[1177,310,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=301', 'A-Site Crate Corner Lineup', 'Can stop pushes, or ult-point denial']], 'Showers Molly']
+        ['Bind','Phoenix','Blaze',854,410, [[1061,376,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=317', 'A-Tele Lineup', 'Team Utility ']], 'Mid Wall via A-Tele']
+
         
     ]
