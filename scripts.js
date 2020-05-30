@@ -412,6 +412,7 @@ function createPin(){
     + ", [" + pinToSave[4] + "], '" + pinName +  "']");
 
     clearPins();
+    document.getElementById('pinType').value = "Main Pin";
 }
 
 // draw pin function 
