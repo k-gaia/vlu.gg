@@ -1,5 +1,5 @@
 var champ = "Breach"; 
-var map;
+var map = "Bind";
 var ability = "Aftershock";
 var abilityFilter = false;
 var activePinCount = 0;
@@ -472,26 +472,6 @@ function drawPin(){
 
 // on load function -> sets up on click events for pin creation
 window.onload = function () {
-
-    const loaded = window.location.href;
-
-    console.log(loaded);
-
-    if (loaded.includes('bind')){
-
-        map = 'Bind';
-
-    }
-
-    else if(loaded.includes('haven')){
-        map = 'Haven';
-    }
-
-    else {
-
-        map = 'Split';
-
-    }
 
     // add to map click listener
     document.getElementById('mapImg').addEventListener("click", function() {drawPin()}, false);
