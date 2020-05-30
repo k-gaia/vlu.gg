@@ -46,5 +46,6 @@ var pins =
         ['Split','Sage','Slow_Orb',1068,573, [[893,458,'vids/Split/Sage/Gaia Mid B-Connector Slow.mp4', 'Back Mid Lobby Lineup']], 'Mid B-Connector Slow'],
         ['Split','Sage','Slow_Orb',944,134, [[921,530,'vids/Split/Sage/Gaia Mid A Entrance Slow.mp4', 'Mid Lineup']], 'A Entrance Slow '],
         ['Split','Viper','Toxic_Screen',936,266, [[1174,302,'https://v.redd.it/1k05fapw20s41/DASH_1080?source=fallback.mp4', 'Attacker A-Site Lobby']], 'A-Ramp & A-Heaven Wall'],
-        ['Split','Viper','Toxic_Screen',760,249, [[1175,304,'https://v.redd.it/1k05fapw20s41/DASH_1080?source=fallback.mp4', 'Attacker A-Site Lobby']], 'A-Ramp & A-Heaven Wall']
+        ['Split','Viper','Toxic_Screen',760,249, [[1175,304,'https://v.redd.it/1k05fapw20s41/DASH_1080?source=fallback.mp4', 'Attacker A-Site Lobby']], 'A-Ramp & A-Heaven Wall'],
+        ['Split','Phoenix','Hot_Hands',1021,334, [[1047,495,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=181', 'A-Short Lineup', 'Run Throw']], 'U-Haul Entrance Molly']
     ]
