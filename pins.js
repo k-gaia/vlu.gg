@@ -53,7 +53,5 @@ var pins =
         ['Bind','Phoenix','Hot_Hands',1254,394, [[1177,310,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=301', 'A-Site Crate Corner Lineup', 'Can stop pushes, or ult-point denial']], 'Showers Molly'],
         ['Bind','Phoenix','Blaze',854,410, [[1061,376,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=317', 'A-Tele Lineup', 'Team Utility ']], 'Mid Wall via A-Tele'],
         ['Bind','Phoenix','Hot_Hands',784,435, [[872,515,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=376', 'Mid Corner Lineup', 'Can catch out enemy team']], 'Hookah Corner Molly']
-
-
-        
+       
     ]
