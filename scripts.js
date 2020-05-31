@@ -1,5 +1,5 @@
 var champ = "Breach"; 
-var map = "Bind";
+const map = "Bind";
 var ability = "Aftershock";
 var abilityFilter = false;
 var activePinCount = 0;
