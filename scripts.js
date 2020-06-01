@@ -471,6 +471,7 @@ function drawPin(){
 
 }
 
+/* Depracated now added on pinCreator script tag, to keep page consistency plus map 'FIXES' lmao
 // on load function -> sets up on click events for pin creation
 window.onload = function () {
 
@@ -489,6 +490,7 @@ window.onload = function () {
 
     
 }
+*/
 
 // update ability function, called on drop down value select
 function updateAbilities(){
