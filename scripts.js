@@ -289,8 +289,8 @@ function getPins(){
 // clear pin function 
 function clearPins(champToClear){
 
-    console.log(activePinIDs)
-    console.log(activePinCount);
+    //console.log(activePinIDs)
+    //console.log(activePinCount);
 
     // if champ isn't selected and no pins are active skip clear pins call
     // without this check this can break the first getPins() call
@@ -306,13 +306,11 @@ function clearPins(champToClear){
             var elem = document.getElementById(activePinIDs[i]);
 
             document.body.removeChild(elem);
+          
+            // decr. pins 
+            activePinCount--;
         }
-        // reset pin count and activePinID Array 
-        activePinCount = 0;
-
         activePinIDs = [];
-        // debug
-
     }
 }
 
@@ -333,14 +331,14 @@ function clearChildPins(champToClear){
             var elem = document.getElementById(activeChildPinIDs[i]);
 
             document.body.removeChild(elem);
-
+          
+            //decr. pin count for each child pin removed
+            activePinCount--;
         }
-        // reset pin count and activePinID Array 
-        activePinCount = 0;
 
         activeChildPinIDs = [];
         // debug
-        console.log(activeChildPinIDs)
+        //console.log(activeChildPinIDs)
         //console.log(activePinCount);
     }
 }
@@ -441,6 +439,9 @@ function drawPin(){
             
             // set image values 
             newBoi.innerHTML = "<img src='abilityIcons/"+ abilityDrop.value +".webp' width=22px>";
+
+            // push new button id to active ids array 
+            activePinIDs.push(newBoi.id);
             
         }
 
@@ -450,11 +451,11 @@ function drawPin(){
             newBoi.innerHTML = "<img src='pinImg.png' width=10px>";
 
             newBoi.id = 'newChildPin ' + newBoi.style.top + " " + newBoi.style.left;
+          
+            // push new button id to active ids array 
+            activeChildPinIDs.push(newBoi.id);
 
         }
-
-        // push new button id to active ids array 
-        activePinIDs.push(newBoi.id);
 
         activePinCount++;
 
