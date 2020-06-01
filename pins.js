@@ -19,7 +19,6 @@ var pins =
         ['Split','Sage','Slow_Orb',653,193, [[1084,123,'vids/Split/Sage/Purrplexx A Back Slow.mp4', 'Attacker A-Lobby Lineup']], 'Back A-Site Slow'],
         ['Split','Sage','Slow_Orb',877,315, [[1222,294,'vids/Split/Sage/Purrplexx A Ramp Slow.mp4', 'Attacker A-Lobby Lineup']], 'A Heaven Ramp Slow'],
         ['Bind','Phoenix','Hot_Hands',1221,358, [[1270,413,'vids/Bind/Phoenix/xRiival Reddit Shower Crate Molly.mp4', 'Shower Lineup']], 'Shower Corner Crates Molly'],
-        ['Bind','Phoenix','Hot_Hands',1252,395, [[1227,341,'vids/Bind/Phoenix/Xriival Reddit Showers Molly.webm', 'Shower Crates Lineup']], 'A Showers Molly'],
         ['Bind','Sage','Slow_Orb',781,402, [[1138,369,'https://v.redd.it/ise16545kmw41/DASH_1080?source=fallback', 'A Site Lineup']], 'Hookah Slow Orb'],
         ['Haven','Raze','Paint_Shells',1035,738, [[858,727,'https://v.redd.it/orlv26s1bur41/DASH_1080?source=fallback.mp4', 'C-Site Lineup']], 'C-Cubby Grenade'],
         ['Bind','Viper','Poison_Cloud',1189,320, [[1112,528,'https://www.youtube.com/embed/z4HR_RAAAVE?start=9', 'A-Lobby Attacker']], 'Front A-Site Smoke'],
@@ -50,7 +49,7 @@ var pins =
         ['Bind','Phoenix','Hot_Hands',1021,334, [[1047,495,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=181', 'A-Short Lineup', 'Run Throw']], 'U-Haul Entrance Molly'],
         ['Bind','Phoenix','Blaze',1074,365, [[1055,484,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=207', 'A-Site Entrance ', 'Useful for A-Short pushes ']], 'A-Short Wall Push'],
         ['Bind','Phoenix','Hot_Hands',1092,487, [[1058,367,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=269', 'A-Tele Lineup', 'Use At Start of Round ']], 'A-Short Defence Molly'],
-        ['Bind','Phoenix','Hot_Hands',1254,394, [[1177,310,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=301', 'A-Site Crate Corner Lineup', 'Can stop pushes, or ult-point denial']], 'Showers Molly'],
+        ['Bind','Phoenix','Hot_Hands',1254,394, [[1227,341,'vids/Bind/Phoenix/Xriival Reddit Showers Molly.webm', 'Shower Crates Lineup'], [1177,310,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=301', 'A-Site Crate Corner Lineup', 'Can stop pushes, or ult-point denial']], 'Showers Molly'],
         ['Bind','Phoenix','Blaze',854,410, [[1061,376,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=317', 'A-Tele Lineup', 'Team Utility ']], 'Mid Wall via A-Tele'],
         ['Bind','Phoenix','Hot_Hands',785,436, [[876,519,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=376', 'Mid Lineup', 'Riskier lineup, can stop early holds on this spot: however risking getting picked from mid player'],[877,429,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=360', 'B-Tele Box Lineup', 'Safer lineup, angles are at least cleared/peaked, team can punish anyone who rotates off your molly into the clearing']], 'Back Hookah Molly']
         ['Bind','Phoenix','Hot_Hands',784,433, [], 'Back Hookah Molly'],
