@@ -410,6 +410,7 @@ function createPin(){
     + ", [" + pinToSave[4] + "], '" + pinName +  "']");
 
     clearPins();
+    clearChildPins();
     document.getElementById('pinType').value = "Main Pin";
 }
 
