@@ -398,7 +398,7 @@ function createPin(){
             const pinDirectory = prompt("Video Name: ");
 
             pinToSave[4].push("[" + document.getElementById(activeChildPinIDs[i]).style.left.replace("px", ""), 
-            document.getElementById(activePinIDs[i]).style.top.replace("px", ""), "'"+pinDirectory+"', '" + childPinName + "', '" + childPinNote + "']");
+            document.getElementById(activeChildPinIDs[i]).style.top.replace("px", ""), "'"+pinDirectory+"', '" + childPinName + "', '" + childPinNote + "']");
         }
 
     }
