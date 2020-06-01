@@ -54,9 +54,8 @@ var pins =
         ['Bind','Phoenix','Hot_Hands',785,436, [[813,498,'https://www.youtube.com/embed/B9raomDyQM4?start=62', 'Safe Mid Lineup', 'Safer than the other two lineups, try let your team know to punish anyone rotating off this molly.'], [876,519,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=376', 'Mid Lineup', 'Riskier lineup, can stop early holds on this spot: however risking getting picked from mid player'],[877,429,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=360', 'B-Tele Box Lineup', 'Safer lineup, angles are at least cleared/peaked, team can punish anyone who rotates off your molly into the clearing']], 'Back Hookah Molly'],
         ['Bind','Phoenix','Hot_Hands',809,267, [[876,427,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=360', 'B-Tele Box', 'Clears out cubby for b-site executes']], 'B-Cubby Molly'],
         ['Bind','Phoenix','Hot_Hands',630,285, [[644,420,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=415', 'B-Tele Entrance Lineup', 'Careful to have the angle into B cleared, as you could be picked from here.']], 'Elbow Molly'],
-        ['Bind','Phoenix','Blaze',726,307, [[777,346,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=456', 'Hookah Lineup', 'Good for pushing into site and isolating the elbow and close B-Main players']], 'B-Entrance Wall']
-
-
-        
+        ['Bind','Phoenix','Blaze',726,307, [[777,346,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=456', 'Hookah Lineup', 'Good for pushing into site and isolating the elbow and close B-Main players']], 'B-Entrance Wall'],
+        ['Bind','Phoenix','Hot_Hands',1025,427, [[956,471,'https://www.youtube.com/embed/B9raomDyQM4?start=71', 'A-Side Connector Basket Lineup', 'Useful for safe A-Site entrances. ']], 'A-Cubby Molly']
+      
 
     ]
