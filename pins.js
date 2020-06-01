@@ -53,7 +53,7 @@ var pins =
         ['Bind','Phoenix','Blaze',854,410, [[1061,376,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=317', 'A-Tele Lineup', 'Team Utility ']], 'Mid Wall via A-Tele'],
         ['Bind','Phoenix','Hot_Hands',785,436, [[876,519,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=376', 'Mid Lineup', 'Riskier lineup, can stop early holds on this spot: however risking getting picked from mid player'],[877,429,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=360', 'B-Tele Box Lineup', 'Safer lineup, angles are at least cleared/peaked, team can punish anyone who rotates off your molly into the clearing']], 'Back Hookah Molly']
         ['Bind','Phoenix','Hot_Hands',784,433, [], 'Back Hookah Molly'],
-        ['Bind','Phoenix','Blaze',1087,360, [[1087,360,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=330', 'A-Site Lineup', 'Good Utility for Site Players, Slowing Down Pushes. ']], 'A-Site Short Wall'],
+        ['Bind','Phoenix','Blaze',1087,360, [[1087,360,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=330', 'A-Site Lineup', 'Good Utility for Site Players, Slowing Down Pushes. ']], 'A-Site Short Wall']
         
         
 
