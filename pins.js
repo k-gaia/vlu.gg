@@ -47,10 +47,9 @@ var pins =
         ['Split','Viper','Toxic_Screen',936,266, [[1174,302,'https://v.redd.it/1k05fapw20s41/DASH_1080?source=fallback.mp4', 'Attacker A-Site Lobby']], 'A-Ramp & A-Heaven Wall'],
         ['Split','Viper','Toxic_Screen',760,249, [[1175,304,'https://v.redd.it/1k05fapw20s41/DASH_1080?source=fallback.mp4', 'Attacker A-Site Lobby']], 'A-Ramp & A-Heaven Wall'],
         ['Bind','Phoenix','Hot_Hands',1021,334, [[1047,495,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=181', 'A-Short Lineup', 'Run Throw']], 'U-Haul Entrance Molly'],
-        ['Bind','Phoenix','Blaze',1074,365, [[1055,484,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=207', 'A-Site Entrance ', 'Useful for A-Short pushes ']], 'A-Short Wall Push'],
+        ['Bind','Phoenix','Blaze',1074,365, [[1097,280,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=330', 'A-Site Lineup', 'Defender utility, slows down pushes.'], [1055,484,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=207', 'A-Site Entrance ', 'Useful for A-Short pushes ']], 'A-Short Wall Push'],
         ['Bind','Phoenix','Hot_Hands',1092,487, [[1058,367,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=269', 'A-Tele Lineup', 'Use At Start of Round ']], 'A-Short Defence Molly'],
         ['Bind','Phoenix','Hot_Hands',1254,394, [[1227,341,'vids/Bind/Phoenix/Xriival Reddit Showers Molly.webm', 'Shower Crates Lineup'], [1177,310,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=301', 'A-Site Crate Corner Lineup', 'Can stop pushes, or ult-point denial']], 'Showers Molly'],
         ['Bind','Phoenix','Blaze',854,410, [[1061,376,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=317', 'A-Tele Lineup', 'Team Utility ']], 'Mid Wall via A-Tele'],
-        ['Bind','Phoenix','Blaze',1087,360, [[1087,360,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=330', 'A-Site Lineup', 'Good Utility for Site Players, Slowing Down Pushes. ']], 'A-Site Short Wall'],
         ['Bind','Phoenix','Hot_Hands',785,436, [[876,519,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=376', 'Mid Lineup', 'Safer lineup, angles are at least cleared/peaked, team can punish anyone who rotates off your molly into the clearing'],[877,429,'https://www.youtube.com/embed/gd7JU_Ghcv8?start=360', 'B-Tele Box Lineup', 'Riskier lineup, can stop early holds on this spot: however risking getting picked from mid player']], 'Back Hookah Molly']
     ]
