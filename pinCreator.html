@@ -8,7 +8,18 @@
         <script src="scripts.js"></script>
         <script src="pins.js"></script> 
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-        <script>window.onload = function () { changeMap('Bind'); }</script>
+        <script>
+            window.onload = function () { changeMap('Bind'); 
+            // get champ drop down selector
+            var champDrop = document.getElementById('champs');
+
+            // iterate through champ array and add to drop down
+            for (i = 0; i < this.champs.length; i++){
+                var option = document.createElement("option");
+                option.text = champs[i];
+                champDrop.add(option);}} 
+          </script>
+     
 
     </head>
 
