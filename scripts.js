@@ -387,9 +387,9 @@ function createPin(){
     // variable to store final array to output
     var pinToSave = [map, document.getElementById('champs').value, document.getElementById('newPin').style.getPropertyValue('top'), document.getElementById('newPin').style.getPropertyValue('left'), [], pinName];
 
-    for (i = 0; i < activePinIDs.length; i++){
+    for (i = 0; i < activeChildPinIDs.length; i++){
 
-        if (activePinIDs[i].includes('newChildPin')){
+        if (activeChildPinIDs[i].includes('newChildPin')){
 
             var childPinName = prompt("Enter Pin " + i + "s Name: ");
 
