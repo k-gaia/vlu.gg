@@ -1,5 +1,5 @@
 var champ = "Breach"; 
-var map;
+var map = "Bind";
 var ability = "Aftershock";
 var abilityFilter = false;
 var activePinCount = 0;
@@ -8,7 +8,8 @@ var activePinIDs = [];
 var activeChildPinIDs = [];
 var drawingPins = false;
 var calloutState = false;
-
+var screenWidth = window.innerWidth;
+var screenHeight = window.innerHeight;
 var champs = ['Breach', 'Brimstone', 'Cypher', 'Jett', 'Omen', 'Phoenix', 'Raze', 'Sage', 'Sova', 'Viper'];
 var abilities = [
                     ['Aftershock', 'Flashpoint', 'Fault_Line', 'Rolling_Thunder'],
@@ -68,7 +69,7 @@ function changeChamp(selectedChamp){
     ability4 = '"' + abilities[champs.findIndex(champGet)][3] + '"';
 
     // change champ 
-    document.getElementById('agentImg').src = "champIcons/" + champ + "_icon.webp";
+    document.getElementById('agentImg').src = "champIcons/" + champ + "_Icon.webp";
     document.getElementById('agentText').innerText = champ;
 
     // setup ability dropdown 
@@ -116,7 +117,7 @@ function pinButtonFunc(pinsToCreate){
 
         //pin.innerHTML = '<img src="pinImg.png" width="20px" height="20px">';
         // set pin image & size
-        pin.innerHTML = '<img src="pinImg.png" width=10px height=10px">' + pinLabel;
+        pin.innerHTML = /*'<img src="pinImg.png" style="width: 16.625%;">' + */ pinLabel;
 
         // set pin note to display on playback
         document.getElementById("smokeVideoNote").innerText = pinsToCreate[i][4];
@@ -128,13 +129,30 @@ function pinButtonFunc(pinsToCreate){
         pin.style.cssText = 'position: absolute;';
         
         // use pin details for x-y position
-        pin.style.left = pinsToCreate[i][0] + 'px';
-        pin.style.top = pinsToCreate[i][1]  + 'px';
+        //pin.style.left = pinsToCreate[i][0] + 'px';
+        //pin.style.top = pinsToCreate[i][1]  + 'px';
+
+        const percentX = (pinsToCreate[i][0]) / screenWidth;
+        const percentY = (pinsToCreate[i][1]) / screenHeight;
+
+        // use pin details for x-y position
+        pin.style.left = (percentX * 100) + 0.35 + 'vw';
+        pin.style.top = (percentY * 100) + 0.2 + 'vh';
+
 
         // set pin id for manipulation incl. directory 
         pin.id = champ + ' pin¬' + pinsToCreate[i][2];
 
         const lineUpDir = pinsToCreate[i][2].toString();
+
+
+        pin.style.backgroundImage = "url('pinImg.png')";
+        pin.style.backgroundSize = 'contain';
+        pin.style.height = '1.2%';
+        pin.style.width = '1.2%';
+
+        pin.style.maxWidth = "20%";
+        pin.style.minWidth = "20px";
 
         // pin onclick 
         pin.onclick = function(){pinPlayBack(lineUpDir)};
@@ -254,15 +272,32 @@ function getPins(){
         // set pin image & size
 
         const pinLabel = " <p id=pinLabel> " + pinDetails[i][3] + " </p>";
-
-        pin.innerHTML = '<img src="abilityIcons/' + pinDetails[i][4] + '.webp" width="' + pinSize + 'px" height="' + pinSize + 'px">' + pinLabel;
-
+        
         // setup aboslute position
         pin.style.cssText = 'position: absolute;';
+
+        // new pin styling / position settings
+        pin.style.backgroundImage = "url('abilityIcons/" + pinDetails[i][4] + ".webp')";
+        pin.style.backgroundSize = "contain";
+        pin.style.width = "3%";
+        pin.style.height = "3%";
         
+        pin.style.maxWidth = "20%";
+        pin.style.minWidth = "20px";
+
+        console.log("url('abilityIcons/" + pinDetails[i][4] + ".webp')");
+
+        pin.innerHTML = /*'<img src="abilityIcons/' + pinDetails[i][4] + '.webp">' + */ pinLabel;
+
+        const percentX = (pinDetails[i][0]) / screenWidth;
+        const percentY = (pinDetails[i][1]) / screenHeight;
+
         // use pin details for x-y position
-        pin.style.left = pinDetails[i][0]+ 'px';
-        pin.style.top = pinDetails[i][1]+ 'px';
+        pin.style.left = (percentX * 100) + 0.5 + 'vw';
+        pin.style.top = (percentY * 100) + 'vh';
+
+        //pin.style.left = pinDetails[i][0] + 'px';
+        //pin.style.top = pinDetails[i][1] + 'px';
 
         // set pin id for manipulation incl. directory 
         pin.id = champ + " " + pinDetails[i][3];
@@ -289,8 +324,8 @@ function getPins(){
 // clear pin function 
 function clearPins(champToClear){
 
-    //console.log(activePinIDs)
-    //console.log(activePinCount);
+    console.log(activePinIDs)
+    console.log(activePinCount);
 
     // if champ isn't selected and no pins are active skip clear pins call
     // without this check this can break the first getPins() call
@@ -306,11 +341,16 @@ function clearPins(champToClear){
             var elem = document.getElementById(activePinIDs[i]);
 
             document.body.removeChild(elem);
-          
+
             // decr. pins 
             activePinCount--;
+
         }
+
+
         activePinIDs = [];
+        // debug
+
     }
 }
 
@@ -331,14 +371,16 @@ function clearChildPins(champToClear){
             var elem = document.getElementById(activeChildPinIDs[i]);
 
             document.body.removeChild(elem);
-          
+
             //decr. pin count for each child pin removed
             activePinCount--;
+
         }
 
+        //clear child pin ids
         activeChildPinIDs = [];
         // debug
-        //console.log(activeChildPinIDs)
+        console.log(activeChildPinIDs)
         //console.log(activePinCount);
     }
 }
@@ -397,8 +439,8 @@ function createPin(){
 
             const pinDirectory = prompt("Video Name: ");
 
-            pinToSave[4].push("[" + document.getElementById(activeChildPinIDs[i]).style.left.replace("px", ""), 
-            document.getElementById(activeChildPinIDs[i]).style.top.replace("px", ""), "'"+pinDirectory+"', '" + childPinName + "', '" + childPinNote + "']");
+            pinToSave[4].push("[" + document.getElementById(activePinIDs[i]).style.left.replace("px", ""), 
+            document.getElementById(activePinIDs[i]).style.top.replace("px", ""), "'"+pinDirectory+"', '" + childPinName + "', '" + childPinNote + "']");
         }
 
     }
@@ -410,7 +452,6 @@ function createPin(){
     + ", [" + pinToSave[4] + "], '" + pinName +  "']");
 
     clearPins();
-    clearChildPins();
     document.getElementById('pinType').value = "Main Pin";
 }
 
@@ -429,15 +470,17 @@ function drawPin(){
 
         // create new pin button
         newBoi = document.createElement("BUTTON");
-
-        // css + positioning
-        newBoi.style.cssText = "position: absolute; top: " + (y - 10) + "px; left: " + (x - 17) + "px;";
+        
         newBoi.className = 'pinButton';
+        
         newBoi.id = 'newPin';
         
         // if main pin selected use ability icon
         if (document.getElementById('pinType').value == "Main Pin"){
             
+            // css + positioning
+            newBoi.style.cssText = "position: absolute; top: " + (y - 10) + "px; left: " + (x - 18) + "px;";
+
             // set image values 
             newBoi.innerHTML = "<img src='abilityIcons/"+ abilityDrop.value +".webp' width=22px>";
 
@@ -449,14 +492,19 @@ function drawPin(){
         // else use child pin image
         else {
 
+            // css + positioning
+            newBoi.style.cssText = "position: absolute; top: " + (y - 8) + "px; left: " + (x - 13) + "px;";
+
             newBoi.innerHTML = "<img src='pinImg.png' width=10px>";
 
             newBoi.id = 'newChildPin ' + newBoi.style.top + " " + newBoi.style.left;
-          
+
             // push new button id to active ids array 
             activeChildPinIDs.push(newBoi.id);
 
         }
+
+
 
         activePinCount++;
 
@@ -473,7 +521,6 @@ function drawPin(){
 
 }
 
-/* Depracated now added on pinCreator script tag, to keep page consistency plus map 'FIXES' lmao
 // on load function -> sets up on click events for pin creation
 window.onload = function () {
 
@@ -481,6 +528,9 @@ window.onload = function () {
     document.getElementById('mapImg').addEventListener("click", function() {drawPin()}, false);
 
     // get champ drop down selector
+
+    if (document.getElementById('champs')){
+
     var champDrop = document.getElementById('champs');
 
     // iterate through champ array and add to drop down
@@ -489,10 +539,10 @@ window.onload = function () {
         option.text = champs[i];
         champDrop.add(option); 
     }  
+}
 
     
 }
-*/
 
 // update ability function, called on drop down value select
 function updateAbilities(){
