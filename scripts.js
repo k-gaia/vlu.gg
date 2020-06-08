@@ -69,7 +69,7 @@ function changeChamp(selectedChamp){
     ability4 = '"' + abilities[champs.findIndex(champGet)][3] + '"';
 
     // change champ 
-    document.getElementById('agentImg').src = "champIcons/" + champ + "_Icon.webp";
+    document.getElementById('agentImg').src = "champIcons/" + champ + "_icon.webp";
     document.getElementById('agentText').innerText = champ;
 
     // setup ability dropdown 
